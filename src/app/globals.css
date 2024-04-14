@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'variables.css';
+@import 'animations.css';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-roboto);
+}
+
+body {
+  background-color: var(--color-white);
+  color: var(--color-main-dark);
+  font-size: var(--main-font-size);
+}
+
+input,
+input:hover,
+input:active,
+input:focus-visible{
+  border: 0;
+  outline: 0;
+} 
+
+.page-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: var(--page-width);
+  padding-bottom: var(--page-padding-block);
+  padding-inline: var(--gap-size);
+}
+
+@media only screen and (max-width: 532px) {
+  .page-wrapper {
+    padding-top: var(--page-padding-block);
+  }
+}

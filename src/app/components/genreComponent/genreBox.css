@@ -1,0 +1,7 @@
+.genre-wrapper {
+    background-color: var(--color-lightgrey);
+    color: var(--color-main-light);
+    border-radius: 18px;
+    padding: 2px 8px;
+    font-size: 12px;
+}
