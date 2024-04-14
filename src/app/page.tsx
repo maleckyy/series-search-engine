@@ -12,7 +12,6 @@ export default function Home() {
   const [seriesData, setSeriesData] = React.useState<ShowData[] | []>([])
   const [inputText, setInputText] = React.useState<string>('')
 
-
   async function getSeries( query: string ) {
     const res = await fetch(base_shows_url + query)
     const data = await res.json()
